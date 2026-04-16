@@ -8,8 +8,19 @@
     <meta name="description" content="سينما فور يو Cinema4You: منصة مجانية لمشاهدة وتحميل أحدث الأفلام العالمية والعربية بجودة عالية. سيرفرات متعددة Google Drive وMixDrop. تجربة سينما لا مثيل لها.">
     <meta name="keywords" content="سينما فور يو, Cinema4You, افلام عربية, افلام اجنبية, تحميل افلام, مشاهدة افلام اون لاين, سيرفرات متعددة, افلام كرتون, افلام اكشن, افلام 2025">
     
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23e50914'/%3E%3Cstop offset='100%25' stop-color='%23ffd700'/%3E%3C/linearGradient%3E%3Cfilter id='glow'%3E%3CfeGaussianBlur stdDeviation='1.5' result='coloredBlur'/%3E%3CfeMerge%3E%3CfeMergeNode in='coloredBlur'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='72' font-family='Arial, sans-serif' font-size='68' font-weight='bold' fill='white' text-anchor='middle' filter='url(%23glow)'%3EC%3C/text%3E%3C/svg%3E">
-    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23e50914'/%3E%3Cstop offset='100%25' stop-color='%23ffd700'/%3E%3C/linearGradient%3E%3Cfilter id='glow'%3E%3CfeGaussianBlur stdDeviation='1.5' result='coloredBlur'/%3E%3CfeMerge%3E%3CfeMergeNode in='coloredBlur'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/merge%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='72' font-family='Arial, sans-serif' font-size='68' font-weight='bold' fill='white' text-anchor='middle' filter='url(%23glow)'%3EC%3C/text%3E%3C/svg%3E">
+    <!-- ========== FAVICON محسن للظهور من خارج الموقع ========== -->
+    <!-- أيقونة للمتصفحات الحديثة (ICO) -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/fluent/96/cinema.png">
+    <!-- أيقونة للهواتف (Apple Touch Icon) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://img.icons8.com/fluent/96/cinema.png">
+    <!-- أيقونة عامة للمتصفحات -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://img.icons8.com/fluent/96/cinema.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://img.icons8.com/fluent/96/cinema.png">
+    <!-- أيقونة SVG احتياطية -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%23e50914'/%3E%3Ctext x='50' y='72' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+    <!-- لون شريط المتصفح في الهواتف -->
+    <meta name="theme-color" content="#e50914">
+    <meta name="msapplication-TileColor" content="#e50914">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,7 +42,6 @@
         body.light-mode .movie-card { background: white; box-shadow: 0 8px 20px rgba(0,0,0,0.08); border: 1px solid rgba(229,9,20,0.15); }
         body.light-mode .cat-btn { background: white; border-color: #e0e0e0; color: #333; }
         body.light-mode .cat-btn:hover, body.light-mode .cat-btn.active { background: var(--primary); color: white; }
-        body.light-mode .ad-native { background: rgba(0,0,0,0.05); border: 1px solid #e0e0e0; }
         .particle-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; pointer-events: none; }
         .particle { position: absolute; border-radius: 50%; pointer-events: none; animation: floatParticle linear infinite; }
         @keyframes floatParticle { 0% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 0.8; } 90% { opacity: 0.8; } 100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; } }
@@ -62,7 +72,7 @@
         .categories { display: inline-flex; gap: 0.6rem; }
         .cat-btn { padding: 0.5rem 1.2rem; border: none; border-radius: 50px; background: rgba(255,255,255,0.05); color: var(--text-primary); cursor: pointer; transition: var(--transition); border: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; }
         .cat-btn:hover, .cat-btn.active { background: var(--primary); transform: translateY(-2px); color: white; }
-        .ad-smartlink { background: linear-gradient(135deg, rgba(229,9,20,0.15), rgba(255,215,0,0.1)); border-radius: 15px; padding: 0.8rem; margin: 1rem 0; text-align: center; border: 1px dashed var(--primary); }
+        .ad-smartlink { background: linear-gradient(135deg, rgba(229,9,20,0.15), rgba(255,215,0,0.1)); border-radius: 15px; padding: 0.8rem; margin: 1rem 0; text-align: center; border: 1px dashed var(--primary); max-width: 1600px; margin-left: auto; margin-right: auto; width: calc(100% - 2rem); }
         .ad-smartlink a { display: inline-block; background: var(--primary); color: white; padding: 0.6rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; transition: var(--transition); }
         .ad-smartlink a:hover { transform: scale(1.05); background: var(--primary-dark); }
         .ad-label { font-size: 0.6rem; color: var(--text-secondary); display: block; margin-bottom: 0.3rem; }
@@ -113,7 +123,7 @@
     <div class="categories-wrapper"><div class="categories" id="categories"><button class="cat-btn active" data-cat="all">🎬 الكل</button><button class="cat-btn" data-cat="action">⚡ أكشن</button><button class="cat-btn" data-cat="superhero">🦸 أبطال خارقين</button><button class="cat-btn" data-cat="animation">🎨 أنميشن</button><button class="cat-btn" data-cat="comedy">😄 كوميدي</button><button class="cat-btn" data-cat="adventure">🏔️ مغامرات</button><button class="cat-btn" data-cat="scifi">🚀 خيال علمي</button></div></div>
     
     <!-- ========== إعلان Smartlink ========== -->
-    <div class="ad-smartlink" style="max-width: 1600px; margin: 0 auto 1rem auto; width: calc(100% - 2rem);">
+    <div class="ad-smartlink">
         <span class="ad-label"><i class="fas fa-gem"></i> عروض حصرية</span>
         <a href="https://www.profitablecpmratenetwork.com/rr08mui1?key=5b454e06e46f4c2f09c7c90f5bc6b011" target="_blank" rel="nofollow noopener sponsored" id="smartlinkAd">
             <i class="fas fa-ticket-alt"></i> احصل على عروض خاصة - اضغط هنا <i class="fas fa-arrow-left"></i>
@@ -124,7 +134,7 @@
     
     <!-- ========== إعلان Social Bar ========== -->
     <div class="social-bar-container">
-        <div class="ad-native-title"><i class="fas fa-share-alt"></i> تابعنا</div>
+        <div class="ad-native-title" style="font-size: 0.7rem; color: var(--text-secondary); text-align: center; margin-bottom: 0.5rem;"><i class="fas fa-share-alt"></i> تابعنا</div>
         <script src="https://pl29118844.profitablecpmratenetwork.com/70/53/d7/7053d7184b65d041db0a1f588235ff89.js"></script>
     </div>
     
@@ -134,58 +144,29 @@
     <div class="toast-notification" id="toast"></div>
 
     <script>
-        // ========== كود Popunder - نسخة محسنة تعمل بقوة ==========
+        // ========== كود Popunder ==========
         (function() {
             let popunderExecuted = false;
-            let popunderWindow = null;
-            
-            // رابط Popunder المباشر من Smartlink
             const popunderUrl = "https://www.profitablecpmratenetwork.com/rr08mui1?key=5b454e06e46f4c2f09c7c90f5bc6b011";
             
             function executePopunder() {
                 if (popunderExecuted) return;
                 popunderExecuted = true;
-                
                 console.log("🚀 Popunder is firing...");
-                
                 try {
-                    // فتح نافذة جديدة
-                    popunderWindow = window.open(popunderUrl, '_blank');
-                    
-                    // محاولة جعل النافذة تظهر في الخلف
-                    if (popunderWindow) {
-                        popunderWindow.blur();
-                    }
-                    
-                    // إعادة التركيز على النافذة الأصلية
+                    let pw = window.open(popunderUrl, '_blank');
+                    if (pw) pw.blur();
                     window.focus();
-                    
-                    // محاولة إضافية لبعض المتصفحات
-                    setTimeout(function() {
-                        window.focus();
-                    }, 100);
-                    
-                } catch(e) {
-                    console.log("Popunder error:", e);
-                    // محاولة بديلة - فتح في نفس النافذة
-                    window.location.href = popunderUrl;
-                }
+                } catch(e) { console.log(e); }
             }
             
-            // الطريقة الأولى: عند النقرة الأولى على أي رابط فيلم
             document.body.addEventListener('click', function(e) {
-                // التحقق إذا كان النقرة على رابط فيلم أو زر فيلم
                 let isMovieClick = e.target.closest('.movie-card, .movie-action-btn, .cat-btn, .nav-tab, #viewAllBtn');
-                
-                if (isMovieClick && !popunderExecuted) {
-                    executePopunder();
-                }
+                if (isMovieClick && !popunderExecuted) executePopunder();
             });
-            
-            console.log("🎯 Popunder script loaded and ready");
         })();
         
-        // Movies Database - تم إضافة 3 أفلام جديدة (موانا 2، سحلية ليو، ماريو)
+        // Movies Database
         const movies = [
             { id: 1, title: "القط ذو الحذاء: الأمنية الأخيرة", titleEn: "Puss in Boots: The Last Wish", file: "puss-in-boots.html", year: 2022, rating: 9.2, category: "animation", categoryAr: "أنميشن", poster: "https://upload.wikimedia.org/wikipedia/ar/0/06/Puss_in_Boots_The_Last_Wish.jpeg", plot: "فيلم مغامرة كوميدي مذهل.", duration: 102 },
             { id: 2, title: "سحر الأقدار - Spellbound", titleEn: "Spellbound 2024", file: "spellbound.html", year: 2024, rating: 8.5, category: "animation", categoryAr: "أنميشن", poster: "https://m.media-amazon.com/images/M/MV5BYTU4NWFlMjEtZGFhMi00NzkxLWJkODQtOWExNDQ2NGVjM2RjXkEyXkFqcGc@._V1_.jpg", plot: "فيلم موسيقي ساحر من إنتاج سوني.", duration: 109 },
@@ -195,10 +176,9 @@
             { id: 6, title: "زوتوبيا 2: عودة الأبطال", titleEn: "Zootopia 2", file: "zootopia2.html", year: 2026, rating: 9.5, category: "animation", categoryAr: "أنميشن", poster: "https://ksa.grandcinemasme.com/Media/resized-0a55f5e1-f2e0-432f-a78a-426b668020ce.jpg", plot: "المتابعة المنتظرة للكلاسيكي المحبوب.", duration: 118 },
             { id: 7, title: "الهجرة الكبرى: الرحلة", titleEn: "Migration", file: "migration.html", year: 2023, rating: 8.4, category: "animation", categoryAr: "أنميشن", poster: "https://m.media-amazon.com/images/M/MV5BYjdlYWJjZTctODViZS00ODVlLTljOTEtOTZhYWZhZTRkZDM1XkEyXkFqcGc@._V1_.jpg", plot: "كوميديا مغامرات من إنتاج إليميشن.", duration: 92 },
             { id: 8, title: "السنافر: جزيرة الكنز", titleEn: "Smurfs 2025", file: "smurfs.html", year: 2025, rating: 8.7, category: "animation", categoryAr: "أنميشن", poster: "https://upload.wikimedia.org/wikipedia/ar/c/c5/%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D8%B3%D9%86%D8%A7%D9%81%D8%B1.png", plot: "مغامرة جديدة وملونة مع السنافر الصغار.", duration: 95 },
-            // === الأفلام الثلاثة الجديدة ===
-            { id: 9, title: "موانا 2", titleEn: "Moana 2", file: "moana2.html", year: 2024, rating: 9.0, category: "animation", categoryAr: "أنميشن", poster: "https://upload.wikimedia.org/wikipedia/ar/2/20/%D8%BA%D9%84%D8%A7%D9%81_%D9%81%D9%8A%D9%84%D9%85_%D9%85%D9%88%D8%A7%D9%86%D8%A7_2.png", plot: "موانا وماوي يعودان في مغامرة جديدة عبر المحيط الهادئ.", duration: 110 },
-            { id: 10, title: "سحلية ليو", titleEn: "Leo", file: "leo.html", year: 2023, rating: 8.8, category: "animation", categoryAr: "أنميشن", poster: "https://i.imgur.com/24fvjjA.jpg", plot: "سحلية عجوز تبلغ من العمر 74 عامًا تخوض مغامرة كوميدية مع طلاب الصف الخامس.", duration: 102 },
-            { id: 11, title: "سوبر ماريو: الفيلم", titleEn: "The Super Mario Bros. Movie", file: "mario.html", year: 2023, rating: 9.1, category: "animation", categoryAr: "أنميشن", poster: "https://cimanow.cc/wp-content/uploads/2023/05/%D9%81%D9%8A%D9%84%D9%85-The-Super-Mario-Bros.-Movie-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg", plot: "مغامرة ماريو ولويس في عالم مملكة الفطر.", duration: 92 }
+            { id: 9, title: "موانا 2", titleEn: "Moana 2", file: "moana2.html", year: 2024, rating: 9.0, category: "animation", categoryAr: "أنميشن", poster: "https://lumiere-a.akamaihd.net/v1/images/moana_2_poster_d23_2024_ca9b8da8.jpeg", plot: "موانا وماوي يعودان في مغامرة جديدة عبر المحيط الهادئ.", duration: 110 },
+            { id: 10, title: "سحلية ليو", titleEn: "Leo", file: "leo.html", year: 2023, rating: 8.8, category: "animation", categoryAr: "أنميشن", poster: "https://m.media-amazon.com/images/M/MV5BZjI1ZTI0MjAtZTU2My00MDA2LTk0YjAtNmJhNjg0ZjI0ZmFmXkEyXkFqcGc@._V1_.jpg", plot: "سحلية عجوز تبلغ من العمر 74 عامًا تخوض مغامرة كوميدية مع طلاب الصف الخامس.", duration: 102 },
+            { id: 11, title: "سوبر ماريو: الفيلم", titleEn: "The Super Mario Bros. Movie", file: "mario.html", year: 2023, rating: 9.1, category: "animation", categoryAr: "أنميشن", poster: "https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZTA0NWQyMzQ0MDc1XkEyXkFqcGc@._V1_.jpg", plot: "مغامرة ماريو ولويس في عالم مملكة الفطر.", duration: 92 }
         ];
 
         let userData = { favorites: [], watchlist: [], watched: [] };
